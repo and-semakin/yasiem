@@ -32,7 +32,7 @@ class SyslogUDPHandler(socketserver.BaseRequestHandler):
         print( "%s : " % self.client_address[0], str(data))
         body = normalize(str(data))
         today = body['dt'].strftime('%Y-%m-%d')
-        result = es.index(index=today, doc_type='event', body)
+        result = es.index(index=today, doc_type='event', body=body)
         if not result['created']:
             logging.info(str(data))
 
