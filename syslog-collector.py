@@ -18,22 +18,21 @@ import logging
 import socketserver
 from elasticsearch import Elasticsearch
 from datetime import datetime
+from normalizer import normalize
 
 es = Elasticsearch()
 
 logging.basicConfig(level=logging.INFO, format='%(message)s', datefmt='', filename=LOG_FILE, filemode='a')
 
-def normalize(raw):
-    return {'raw': raw}
-
 class SyslogUDPHandler(socketserver.BaseRequestHandler):
 
     def handle(self):
-        today = datetime.now().strftime('%Y-%m-%d')
         data = bytes.decode(self.request[0].strip())
         socket = self.request[1]
         print( "%s : " % self.client_address[0], str(data))
-        result = es.index(index=today, doc_type='event', body=normalize(str(data)))
+        body = normalize(str(data))
+        today = body['dt'].strftime('%Y-%m-%d')
+        result = es.index(index=today, doc_type='event', body)
         if not result['created']:
             logging.info(str(data))
 

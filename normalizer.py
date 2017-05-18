@@ -39,5 +39,6 @@ def normalize(line):
     else:
         return {'act': 'Parse error.'}
 
-for line in open('example.log'):
-    print(normalize(line))
+if __name__ == "__main__":
+    for line in open('example.log'):
+        print(normalize(line))
