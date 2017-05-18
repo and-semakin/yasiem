@@ -1,0 +1,501 @@
+20 %Antivirus% 2017-05-18-10-23-40-164502 PC10 document_928.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-178010 PC6 document_967.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-40-194521 PC6 document_198.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-40-205028 PC15 document_999.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-40-216035 PC2 document_847.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-40-227042 PC0 document_821.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-244554 PC19 document_777.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-40-252560 PC16 document_903.docx INFECTED MOVED
+50 %Antivirus% 2017-05-18-10-23-40-263567 PC14 document_523.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-40-274574 PC16 document_885.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-283080 PC5 document_9.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-295570 PC12 document_865.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-301435 PC15 document_917.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-311210 PC19 document_275.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-320009 PC16 document_223.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-330762 PC16 document_738.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-335649 PC16 document_687.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-346402 PC9 document_574.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-351291 PC6 document_484.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-363022 PC10 document_519.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-378663 PC13 document_370.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-386672 PC6 document_456.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-395658 PC9 document_503.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-407389 PC1 document_944.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-40-415209 PC3 document_109.docx INFECTED MOVED
+50 %Antivirus% 2017-05-18-10-23-40-426940 PC2 document_432.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-40-433783 PC16 document_844.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-40-445515 PC5 document_325.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-40-458223 PC13 document_203.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-466043 PC19 document_337.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-476796 PC10 document_817.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-484260 PC19 document_236.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-497704 PC4 document_25.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-508456 PC0 document_594.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-515299 PC9 document_30.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-526052 PC0 document_150.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-533873 PC14 document_491.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-545604 PC14 document_454.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-552447 PC5 document_613.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-563202 PC5 document_110.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-571021 PC19 document_941.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-582349 PC19 document_341.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-592856 PC4 document_684.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-599748 PC8 document_933.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-611479 PC8 document_647.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-618322 PC1 document_736.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-40-630053 PC15 document_886.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-40-636896 PC1 document_296.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-40-647650 PC13 document_562.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-40-659380 PC1 document_427.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-667201 PC17 document_335.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-678932 PC5 document_894.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-685939 PC14 document_24.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-698858 PC9 document_93.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-40-709612 PC4 document_969.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-40-717432 PC3 document_13.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-730141 PC9 document_420.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-736006 PC16 document_896.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-746759 PC3 document_487.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-752625 PC8 document_395.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-766311 PC14 document_932.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-777064 PC0 document_548.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-784027 PC4 document_959.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-796014 PC14 document_773.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-802856 PC11 document_755.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-813610 PC3 document_772.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-820453 PC12 document_843.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-831207 PC8 document_421.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-841960 PC15 document_889.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-849780 PC14 document_197.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-862489 PC16 document_988.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-869331 PC15 document_78.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-880612 PC13 document_425.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-888116 PC12 document_901.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-899036 PC10 document_134.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-910766 PC17 document_310.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-917609 PC19 document_853.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-929340 PC5 document_787.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-937161 PC6 document_173.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-40-949869 PC3 document_768.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-40-963555 PC12 document_343.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-970398 PC4 document_436.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-981701 PC13 document_831.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-40-993208 PC16 document_168.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-003033 PC6 document_444.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-010854 PC7 document_123.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-015742 PC5 document_550.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-028450 PC3 document_251.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-034316 PC12 document_878.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-047024 PC15 document_165.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-054845 PC13 document_446.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-066576 PC6 document_488.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-077329 PC15 document_182.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-084792 PC17 document_866.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-097258 PC16 document_473.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-106056 PC10 document_878.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-41-117787 PC2 document_714.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-41-130496 PC6 document_614.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-41-138316 PC16 document_68.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-41-152980 PC4 document_654.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-163735 PC17 document_395.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-171554 PC5 document_378.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-41-181880 PC13 document_721.docx INFECTED FIXED
+50 %Antivirus% 2017-05-18-10-23-41-187883 PC5 document_645.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-41-198326 PC3 document_306.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-204190 PC6 document_637.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-214945 PC5 document_517.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-222765 PC13 document_978.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-234496 PC7 document_929.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-244271 PC11 document_292.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-251115 PC5 document_728.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-264801 PC5 document_460.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-270666 PC2 document_501.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-282470 PC18 document_200.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-41-287473 PC0 document_668.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-41-298413 PC15 document_302.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-306234 PC10 document_349.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-317965 PC0 document_979.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-330674 PC11 document_708.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-334584 PC19 document_201.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-345337 PC5 document_16.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-353158 PC15 document_393.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-366844 PC11 document_321.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-380558 PC6 document_50.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-387062 PC9 document_315.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-397526 PC4 document_831.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-405345 PC17 document_523.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-419032 PC9 document_284.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-429785 PC11 document_849.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-438583 PC15 document_60.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-449337 PC3 document_479.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-454224 PC14 document_139.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-464979 PC19 document_888.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-474755 PC1 document_295.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-482646 PC17 document_695.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-493654 PC18 document_610.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-498162 PC6 document_388.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-511848 PC13 document_804.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-522602 PC17 document_939.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-531400 PC9 document_869.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-542154 PC4 document_224.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-548996 PC6 document_728.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-561704 PC7 document_479.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-568548 PC1 document_672.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-580782 PC15 document_912.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-592290 PC0 document_343.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-599707 PC1 document_379.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-610460 PC6 document_17.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-618280 PC0 document_989.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-630010 PC5 document_316.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-635876 PC5 document_404.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-648584 PC15 document_387.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-661294 PC4 document_195.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-668136 PC6 document_664.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-680370 PC19 document_149.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-41-687375 PC19 document_799.docx INFECTED FIXED
+20 %Antivirus% 2017-05-18-10-23-41-699794 PC1 document_545.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-711524 PC0 document_815.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-718368 PC19 document_598.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-731077 PC18 document_819.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-736943 PC14 document_432.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-41-749650 PC3 document_802.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-41-762359 PC12 document_609.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-769201 PC7 document_137.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-782963 PC3 document_644.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-794971 PC7 document_485.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-802817 PC7 document_724.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-814549 PC6 document_201.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-821391 PC10 document_831.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-832147 PC2 document_81.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-838988 PC10 document_900.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-849741 PC7 document_119.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-854629 PC8 document_462.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-866361 PC2 document_141.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-874181 PC11 document_503.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-885052 PC4 document_981.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-897040 PC18 document_189.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-903883 PC6 document_78.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-915614 PC18 document_996.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-934188 PC14 document_820.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-951784 PC4 document_884.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-966450 PC6 document_510.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-977202 PC5 document_256.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-986142 PC0 document_859.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-41-997129 PC3 document_602.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-003972 PC3 document_533.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-015702 PC6 document_675.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-021568 PC6 document_672.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-036232 PC4 document_944.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-046984 PC5 document_584.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-053827 PC17 document_812.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-065559 PC7 document_589.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-072401 PC10 document_608.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-42-083229 PC16 document_972.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-42-088732 PC5 document_394.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-103084 PC18 document_117.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-113839 PC10 document_226.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-122635 PC4 document_35.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-133389 PC15 document_771.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-139254 PC12 document_84.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-153918 PC2 document_756.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-164672 PC2 document_885.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-170537 PC11 document_250.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-183319 PC14 document_973.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-42-187321 PC9 document_504.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-42-200241 PC6 document_602.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-42-206106 PC5 document_94.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-42-216862 PC0 document_930.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-228592 PC15 document_147.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-233480 PC18 document_424.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-245211 PC11 document_402.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-250098 PC19 document_812.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-257918 PC15 document_126.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-270626 PC14 document_105.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-281406 PC19 document_159.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-287910 PC17 document_267.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-300329 PC15 document_359.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-312060 PC17 document_279.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-319881 PC10 document_189.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-332589 PC10 document_252.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-338455 PC12 document_131.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-42-350186 PC1 document_96.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-42-358006 PC19 document_729.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-374626 PC8 document_345.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-383996 PC18 document_446.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-391000 PC18 document_820.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-42-402374 PC11 document_93.docx INFECTED MOVED
+50 %Antivirus% 2017-05-18-10-23-42-414103 PC7 document_75.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-42-421924 PC17 document_27.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-433655 PC8 document_208.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-441475 PC15 document_711.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-452230 PC16 document_307.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-462982 PC15 document_241.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-470803 PC11 document_196.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-42-483084 PC10 document_591.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-42-490089 PC16 document_680.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-500510 PC8 document_974.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-508328 PC8 document_18.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-42-518104 PC0 document_296.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-42-523969 PC8 document_256.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-534723 PC19 document_340.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-42-540588 PC2 document_356.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-42-551343 PC9 document_642.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-558184 PC9 document_244.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-569917 PC3 document_907.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-574803 PC19 document_550.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-585176 PC5 document_4.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-592681 PC15 document_898.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-42-601575 PC0 document_513.docx INFECTED FIXED
+20 %Antivirus% 2017-05-18-10-23-42-612328 PC19 document_469.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-620149 PC0 document_430.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-631880 PC13 document_810.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-638723 PC4 document_1.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-651431 PC9 document_721.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-663162 PC14 document_819.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-670983 PC18 document_636.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-682264 PC1 document_306.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-688768 PC9 document_983.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-42-700686 PC3 document_579.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-42-707529 PC18 document_802.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-718282 PC4 document_953.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-723170 PC4 document_667.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-737836 PC11 document_819.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-753476 PC10 document_707.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-758363 PC4 document_623.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-769117 PC7 document_493.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-775959 PC10 document_504.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-786857 PC16 document_988.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-798820 PC18 document_314.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-805663 PC6 document_778.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-817394 PC12 document_87.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-824237 PC5 document_650.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-834991 PC8 document_913.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-846721 PC19 document_392.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-854543 PC13 document_71.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-865295 PC8 document_476.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-872138 PC1 document_587.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-884942 PC7 document_830.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-896950 PC18 document_248.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-904774 PC6 document_651.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-915528 PC15 document_437.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-922370 PC11 document_439.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-935079 PC3 document_885.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-940945 PC4 document_232.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-951698 PC6 document_793.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-964408 PC2 document_901.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-42-972228 PC17 document_5.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-42-984531 PC13 document_16.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-42-993036 PC17 document_789.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-003886 PC13 document_823.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-015616 PC0 document_42.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-022458 PC7 document_589.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-034190 PC10 document_385.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-041033 PC7 document_729.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-052764 PC11 document_846.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-058629 PC16 document_169.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-069383 PC18 document_989.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-43-081114 PC2 document_239.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-43-089121 PC18 document_331.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-101040 PC4 document_517.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-108861 PC1 document_582.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-118637 PC13 document_19.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-124502 PC13 document_311.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-136233 PC16 document_630.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-149919 PC5 document_642.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-156762 PC0 document_948.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-169470 PC14 document_821.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-181201 PC1 document_313.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-189710 PC12 document_224.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-201129 PC16 document_855.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-207972 PC2 document_718.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-219703 PC9 document_905.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-227523 PC4 document_803.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-239254 PC4 document_207.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-250985 PC13 document_360.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-256850 PC18 document_523.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-269560 PC2 document_971.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-273469 PC17 document_132.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-285796 PC5 document_31.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-294302 PC18 document_371.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-305129 PC16 document_527.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-316859 PC9 document_163.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-323702 PC0 document_528.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-335433 PC10 document_946.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-339343 PC1 document_205.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-43-352052 PC15 document_118.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-43-369650 PC18 document_302.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-377469 PC7 document_702.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-387886 PC17 document_819.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-398374 PC16 document_278.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-406194 PC14 document_455.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-418904 PC13 document_502.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-425746 PC16 document_511.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-436500 PC5 document_762.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-443342 PC5 document_267.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-454095 PC13 document_56.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-458983 PC1 document_865.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-43-470715 PC1 document_262.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-43-482471 PC19 document_587.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-489976 PC19 document_814.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-502371 PC17 document_776.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-43-509214 PC4 document_394.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-43-519968 PC0 document_393.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-527789 PC12 document_431.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-538543 PC13 document_444.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-549295 PC15 document_37.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-557115 PC17 document_568.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-569824 PC0 document_645.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-573734 PC16 document_920.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-586061 PC1 document_231.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-592566 PC18 document_963.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-604415 PC6 document_402.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-607348 PC15 document_848.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-620056 PC5 document_750.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-626899 PC7 document_248.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-637653 PC5 document_653.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-642541 PC14 document_505.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-654271 PC7 document_54.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-660137 PC12 document_544.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-670891 PC16 document_690.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-682147 PC12 document_153.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-692153 PC8 document_955.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-699616 PC19 document_658.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-708413 PC18 document_442.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-720144 PC5 document_412.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-738719 PC16 document_911.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-744584 PC8 document_301.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-754359 PC3 document_691.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-758270 PC8 document_604.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-766091 PC9 document_940.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-770979 PC13 document_106.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-776844 PC10 document_605.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-787739 PC2 document_269.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-43-791743 PC17 document_224.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-43-799704 PC3 document_635.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-804593 PC12 document_525.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-810458 PC19 document_169.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-820234 PC2 document_110.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-824144 PC13 document_272.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-832942 PC18 document_59.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-43-837830 PC15 document_361.docx INFECTED FIXED
+20 %Antivirus% 2017-05-18-10-23-43-841740 PC0 document_503.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-849561 PC3 document_401.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-854449 PC14 document_673.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-860314 PC11 document_701.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-870090 PC5 document_372.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-874000 PC16 document_347.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-882825 PC13 document_169.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-888329 PC13 document_482.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-893832 PC15 document_574.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-903704 PC8 document_595.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-907613 PC8 document_706.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-43-912501 PC6 document_477.docx INFECTED MOVED
+50 %Antivirus% 2017-05-18-10-23-43-921299 PC7 document_79.docx INFECTED FIXED
+20 %Antivirus% 2017-05-18-10-23-43-927165 PC11 document_920.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-935963 PC5 document_409.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-940851 PC11 document_916.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-950627 PC6 document_147.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-957470 PC12 document_194.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-962359 PC5 document_168.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-43-970179 PC11 document_869.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-43-977022 PC14 document_117.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-987416 PC16 document_818.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-43-991420 PC2 document_383.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-43-998902 PC8 document_510.docx INFECTED FIXED
+50 %Antivirus% 2017-05-18-10-23-44-004769 PC14 document_715.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-44-009656 PC15 document_61.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-019432 PC9 document_66.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-024320 PC11 document_242.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-032141 PC0 document_78.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-038007 PC3 document_491.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-042894 PC18 document_319.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-052670 PC6 document_918.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-056580 PC7 document_585.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-061468 PC6 document_330.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-072222 PC7 document_294.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-078086 PC6 document_193.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-088505 PC5 document_560.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-092508 PC9 document_94.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-100947 PC4 document_648.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-104857 PC9 document_916.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-110723 PC16 document_575.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-121476 PC3 document_375.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-125387 PC4 document_978.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-44-134185 PC3 document_102.docx INFECTED MOVED
+50 %Antivirus% 2017-05-18-10-23-44-139074 PC19 document_310.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-44-144937 PC17 document_272.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-154714 PC11 document_266.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-158623 PC11 document_152.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-168400 PC13 document_911.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-172311 PC8 document_666.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-178177 PC2 document_901.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-187592 PC10 document_651.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-191595 PC10 document_636.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-201037 PC15 document_584.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-204947 PC13 document_620.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-210813 PC0 document_657.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-220588 PC14 document_667.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-225476 PC18 document_109.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-233297 PC14 document_791.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-238185 PC3 document_158.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-244050 PC17 document_498.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-253825 PC17 document_72.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-257736 PC15 document_909.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-262625 PC13 document_770.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-272400 PC10 document_829.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-277288 PC12 document_414.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-286682 PC10 document_47.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-291185 PC8 document_232.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-295688 PC18 document_454.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-305038 PC4 document_532.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-308948 PC0 document_718.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-316769 PC0 document_483.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-322635 PC14 document_916.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-335342 PC12 document_100.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-340230 PC14 document_986.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-345118 PC1 document_812.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-354894 PC10 document_357.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-44-358804 PC1 document_270.docx INFECTED FIXED
+50 %Antivirus% 2017-05-18-10-23-44-374447 PC13 document_53.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-44-386274 PC15 document_952.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-44-390276 PC6 document_771.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-44-394278 PC18 document_130.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-399265 PC3 document_814.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-403174 PC2 document_49.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-44-406107 PC10 document_73.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-44-410017 PC12 document_848.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-414907 PC10 document_147.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-418815 PC8 document_179.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-422726 PC12 document_152.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-426636 PC5 document_694.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-430546 PC18 document_28.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-435434 PC17 document_149.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-439344 PC6 document_951.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-443255 PC0 document_65.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-446187 PC13 document_683.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-451075 PC9 document_378.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-455963 PC2 document_77.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-458896 PC2 document_503.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-44-462806 PC9 document_446.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-44-467694 PC17 document_278.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-471604 PC11 document_369.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-475515 PC16 document_776.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-479425 PC8 document_163.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-484363 PC3 document_146.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-488366 PC11 document_553.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-44-491868 PC3 document_685.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-44-495871 PC3 document_105.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-500332 PC7 document_746.docx CLEAN
+50 %Antivirus% 2017-05-18-10-23-44-504241 PC18 document_813.docx INFECTED MOVED
+20 %Antivirus% 2017-05-18-10-23-44-508152 PC17 document_219.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-512063 PC5 document_170.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-516951 PC5 document_5.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-520861 PC14 document_520.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-524771 PC11 document_114.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-528681 PC18 document_858.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-532592 PC12 document_734.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-537480 PC18 document_314.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-541390 PC0 document_823.docx CLEAN
+20 %Antivirus% 2017-05-18-10-23-44-544323 PC9 document_694.docx CLEAN
+Finished
