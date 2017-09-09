@@ -1,0 +1,181 @@
+body{
+  margin-top: 10px;
+  font-size: 14pt;
+}
+
+#logo-row {
+    height: 100px;
+}
+
+#logo-row {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+#logo-wrapper {
+    font-size: 30pt;
+}
+
+#logo-wrapper a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+#logo-text {
+    font-family: 'Baloo', cursive;
+}
+
+#logo-blockquote {
+    
+}
+
+#logo-blockquote-text {
+    font-size: 13pt;
+}
+
+#logo-blockquote-cite {
+    font-size: 9pt;
+    text-align: right;
+}
+
+
+
+
+/* navbar */
+/*.navbar .divider-vertical {
+    height: 50px;
+    margin: 0 9px;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #f2f2f2;
+}
+
+.navbar-inverse .divider-vertical {
+    border-right-color: #222222;
+    border-left-color: #111111;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse .nav > .divider-vertical {
+        display: none;
+     }
+}*/
+.divider-vertical {
+    height: 50px;
+    margin: 0 9px;
+    border-left: 1px solid #F2F2F2;
+    border-right: 1px solid #FFF;
+}
+
+
+.price {
+    font-family: 'PT Sans', serif;
+}
+
+.cart {
+    width: 100%;
+}
+
+
+.carousel .item {
+  height: 500px;
+}
+
+.carouserl .item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}
+
+
+.top{
+  padding: 20px 0;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.top-bl{
+  background: #bebebe;
+  padding: 15px;
+}
+.top-bl .cart{
+  float: right;
+}
+#sidebar ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+#sidebar ul li{
+  padding: 5px 10px;
+}
+#sidebar ul li.selected{
+  background: #0095ff;
+  color: white;
+  border-radius: 3px;
+}
+#sidebar ul li.selected a{
+  color: white;
+}
+.items{
+  margin-top: 20px;
+}
+.item{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.item a img{
+  margin-bottom: 15px;
+}
+.product-detail{
+  margin-top: 40px;
+}
+.product-detail h2{
+  font-size: 18px;
+}
+form.add{
+  margin-bottom: 10px;
+}
+form.add label{
+  margin-right: 10px;
+}
+#id_quantity{
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+form.add input[type="submit"]{
+  background: #2a6496;
+  border-radius: 3px;
+  border: 0;
+  padding: 5px 10px;
+  color: white;
+}
+.table-cart{
+  width: 100%;
+  margin: 10px 0;
+}
+.cart-img{
+  width: 10%;
+}
+th, td{
+  padding: 5px;
+}
+thead{
+  background: #2a6496;
+  color: white;
+}
+.order-info h2{
+  margin-bottom: 20px;
+}
+.order-form{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.order-form label{
+  display: block;
+}
+.order-form input{
+  width: 100%;
+  padding: 5px 10px;
+}

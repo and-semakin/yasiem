@@ -1,0 +1,21 @@
+{% extends "asset/base.html" %}
+
+{% block title %}
+  Обновление профиля
+{% endblock %}
+
+{% block content %}
+  <h1>Обновление профиля</h1>
+  {% if saved %}
+      <p class="error">Изменения сохранены</p>
+  {% endif %}
+  <div class="col-sm-4">
+    <h2>Заполните форму</h2>
+    <form class="profile-update-form" action="." method="post">
+      {{ user_form.as_p }}
+      {{ userprofile_form.as_p }}
+      {% csrf_token %}
+      <button class="btn btn-success">Обновить</button>
+    </form>
+  </div>
+{% endblock %}
