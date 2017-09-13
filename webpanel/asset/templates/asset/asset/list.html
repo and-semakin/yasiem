@@ -2,16 +2,14 @@
 
 {% load static %}
 
-{% block title %}
-  {% if category %} {{ os.name }} {% else %} По операционной системе {% endif %}
-{% endblock %}
+{% block title %}{% if category %} {{ os.name }} {% else %} По операционной системе {% endif %}{% endblock %}
 
 {% block content %}
   <div id="sidebar" class="col-sm-3">
     <h3>Операционные системы</h3>
     <ul>
       <li {% if not os %} class="selected" {% endif %}>
-        <a href="{% url "asset:AssetList" %}">Все</a>
+        <a href="{% url 'asset:AssetList' %}">Все</a>
       </li>
       {% for os1 in oses %}
         <li {% if os.id == os1.id %} class="selected" {% endif %}>
@@ -37,7 +35,12 @@
           <td><a href="{{ asset.get_absolute_url }}">{{ asset.id }}</a></td>
           <td><a href="{{ asset.get_absolute_url }}">{{ asset.ipv4 }}</a></td>
           <td><a href="{{ asset.get_absolute_url }}">{{ asset.name }}</a><br></td>
-          <td><a href="{{ asset.get_absolute_url }}">{{ asset.os.name }}</a></td>
+          <td>
+            <a href="{{ asset.get_absolute_url }}">{{ asset.os.name }}</a>
+            {% if asset.os.image %}
+            <img src="{{ asset.os.image.url }}">
+            {% endif %}
+          </td>
         </tr>
     {% endfor %}
     </table>

@@ -4,6 +4,7 @@ from django.core.urlresolvers import reverse
 
 class OperatingSystem(models.Model):
     name = models.CharField(max_length=200, db_index=True)
+    image = models.ImageField(upload_to='os/%Y-%m-%d', null=True)
 
     class Meta:
         ordering = ['name']
