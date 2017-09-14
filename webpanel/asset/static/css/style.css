@@ -16,8 +16,7 @@ body{
     font-size: 30pt;
 }
 
-#logo-wrapper a:link, a:visited {
-    text-decoration: none;
+#logo-wrapper a, a:link, a:visited {
     color: black;
 }
 
