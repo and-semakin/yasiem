@@ -2,9 +2,10 @@ from django.db import models
 from django.core.urlresolvers import reverse
 
 
+# класс Операционная система
 class OperatingSystem(models.Model):
-    name = models.CharField(max_length=200, db_index=True)
-    image = models.ImageField(upload_to='os/%Y-%m-%d', null=True)
+    name = models.CharField(max_length=200, db_index=True, verbose_name='Название')
+    image = models.ImageField(upload_to='os/%Y-%m-%d', null=True, verbose_name='Логотип')
 
     class Meta:
         ordering = ['name']
@@ -18,9 +19,10 @@ class OperatingSystem(models.Model):
         return reverse('asset:AssetListByCategory', args=[self.id])
 
 
+# класс Пользователь актива
 class AssetUser(models.Model):
-    name = models.CharField(max_length=200, db_index=True)
-    slug = models.SlugField(max_length=200, db_index=True, unique=True)
+    name = models.CharField(max_length=200, db_index=True, verbose_name='Имя')
+    slug = models.SlugField(max_length=200, db_index=True, unique=True, verbose_name='Ссылка')
 
     class Meta:
         ordering = ['name']
@@ -31,10 +33,11 @@ class AssetUser(models.Model):
         return self.name
 
 
+# класс Актив
 class Asset(models.Model):
-    name = models.CharField(max_length=200, db_index=True)
-    ipv4 = models.CharField(max_length=15, db_index=True)
-    slug = models.SlugField(max_length=200, db_index=True, unique=True)
+    name = models.CharField(max_length=200, db_index=True, verbose_name='Название')
+    ipv4 = models.CharField(max_length=15, db_index=True, verbose_name='IP адрес')
+    slug = models.SlugField(max_length=200, db_index=True, unique=True, verbose_name='Ссылка')
     os = models.ForeignKey(OperatingSystem, related_name='OperatingSystem', verbose_name="Операционная система")
     user = models.ForeignKey(AssetUser, related_name='User', verbose_name="Пользователь актива", null=True,
                              default=None)
@@ -49,3 +52,31 @@ class Asset(models.Model):
 
     def get_absolute_url(self):
         return reverse('asset:AssetDetail', args=[self.slug, self.id])
+
+
+# класс Тип тревоги
+class AlertType(models.Model):
+    ALERT_LEVELS = (
+        (0, 'низкий'),
+        (1, 'средний'),
+        (2, 'высокий')
+    )
+    name = models.CharField(max_length=200, db_index=True, verbose_name='Название')
+    level = models.SmallIntegerField(choices=ALERT_LEVELS, default=0, verbose_name='Уровень тревоги')
+
+    class Meta:
+        verbose_name = 'Тип тревоги'
+        verbose_name_plural = 'Типы тревог'
+
+    def __str__(self):
+        return self.name
+
+
+# класс Тревога
+class Alert(models.Model):
+    type = models.ForeignKey(AlertType, verbose_name='Тип тревоги', db_index=True)
+    asset = models.ForeignKey(Asset, verbose_name='Актив', db_index=True)
+    time = models.DateTimeField(auto_now_add=True,  db_index=True, verbose_name='Время возникновения')
+    checked = models.BooleanField(default=False, db_index=True, verbose_name='Отработано')
+    checked_message = models.CharField(max_length=512, verbose_name='Пояснительное сообщение')
+    # TODO: добавить связь с событиями из ElasticSearch. Здесь как-то нужно хранить идентификаторы событий.
