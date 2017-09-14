@@ -32,11 +32,11 @@
         <tbody>
     {% for asset in asset_collection %}
         <tr>
-          <td><a href="{{ asset.get_absolute_url }}">{{ asset.id }}</a></td>
-          <td><a href="{{ asset.get_absolute_url }}">{{ asset.ipv4 }}</a></td>
-          <td><a href="{{ asset.get_absolute_url }}">{{ asset.name }}</a><br></td>
+          <td><a href="{% url 'asset:AlertListForAsset' asset.slug %}">{{ asset.id }}</a></td>
+          <td><a href="{% url 'asset:AlertListForAsset' asset.slug %}">{{ asset.ipv4 }}</a></td>
+          <td><a href="{% url 'asset:AlertListForAsset' asset.slug %}">{{ asset.name }}</a><br></td>
           <td>
-            <a href="{{ asset.get_absolute_url }}">{{ asset.os.name }}</a>
+            <a href="{% url 'asset:AlertListForAsset' asset.slug %}">{{ asset.os.name }}</a>
             {% if asset.os.image %}
             <img src="{{ asset.os.image.url }}">
             {% endif %}
