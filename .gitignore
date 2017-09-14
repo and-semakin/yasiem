@@ -1,7 +1,7 @@
 venv.cmd
 __pycache__/
-generator/__pycache__/
 logs/*
 .idea/
 webpanel/media/
+migrations/
 [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9] [0-9][0-9]-[0-9][0-9]-[0-9][0-9]/
