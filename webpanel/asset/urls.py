@@ -9,6 +9,13 @@ urlpatterns = [
         views.AssetList, name='AssetListByCategory'),
     url(r'^(?P<slug>[-\w]+)/(?P<id>\d+)/$',
         views.AssetDetail, name='AssetDetail'),
+    url(r'^alerts/$', views.AlertList, name='AlertList'),
+    url(r'^alerts/(?P<asset>[-\w]+)/$', views.AlertList,
+        name='AlertListForAsset'),
+    url(r'^alerts/type/(?P<alert_type>\d+)/$',
+        views.AlertList, name='AlertListForType'),
+    url(r'^alerts/(?P<asset>[-\w]+)/type/(?P<alert_type>\d+)/$',
+        views.AlertList, name='AlertListForAssetAndType'),
 ]
 
 if settings.DEBUG:
