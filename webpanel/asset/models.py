@@ -4,8 +4,10 @@ from django.core.urlresolvers import reverse
 
 # класс Операционная система
 class OperatingSystem(models.Model):
-    name = models.CharField(max_length=200, db_index=True, verbose_name='Название')
-    image = models.ImageField(upload_to='os/%Y-%m-%d', null=True, verbose_name='Логотип')
+    name = models.CharField(max_length=200, db_index=True,
+                            verbose_name='Название')
+    image = models.ImageField(upload_to='os/%Y-%m-%d', null=True,
+                              verbose_name='Логотип')
 
     class Meta:
         ordering = ['name']
@@ -22,7 +24,8 @@ class OperatingSystem(models.Model):
 # класс Пользователь актива
 class AssetUser(models.Model):
     name = models.CharField(max_length=200, db_index=True, verbose_name='Имя')
-    slug = models.SlugField(max_length=200, db_index=True, unique=True, verbose_name='Ссылка')
+    slug = models.SlugField(max_length=200, db_index=True, unique=True,
+                            verbose_name='Ссылка')
 
     class Meta:
         ordering = ['name']
@@ -35,12 +38,17 @@ class AssetUser(models.Model):
 
 # класс Актив
 class Asset(models.Model):
-    name = models.CharField(max_length=200, db_index=True, verbose_name='Название')
-    ipv4 = models.CharField(max_length=15, db_index=True, verbose_name='IP адрес')
-    slug = models.SlugField(max_length=200, db_index=True, unique=True, verbose_name='Ссылка')
-    os = models.ForeignKey(OperatingSystem, related_name='OperatingSystem', verbose_name="Операционная система")
-    user = models.ForeignKey(AssetUser, related_name='User', verbose_name="Пользователь актива", null=True,
-                             default=None)
+    name = models.CharField(max_length=200, db_index=True,
+                            verbose_name='Название')
+    ipv4 = models.CharField(max_length=15, db_index=True,
+                            verbose_name='IP адрес')
+    slug = models.SlugField(max_length=200, db_index=True, unique=True,
+                            verbose_name='Ссылка')
+    os = models.ForeignKey(OperatingSystem, related_name='OperatingSystem',
+                           verbose_name="Операционная система")
+    user = models.ForeignKey(AssetUser, related_name='User',
+                             verbose_name="Пользователь актива",
+                             null=True, default=None)
 
     class Meta:
         ordering = ['name']
@@ -61,8 +69,10 @@ class AlertType(models.Model):
         (1, 'средний'),
         (2, 'высокий')
     )
-    name = models.CharField(max_length=200, db_index=True, verbose_name='Название')
-    level = models.SmallIntegerField(choices=ALERT_LEVELS, default=0, verbose_name='Уровень тревоги')
+    name = models.CharField(max_length=200, db_index=True,
+                            verbose_name='Название')
+    level = models.SmallIntegerField(choices=ALERT_LEVELS, default=0,
+                                     verbose_name='Уровень тревоги')
 
     class Meta:
         verbose_name = 'Тип тревоги'
@@ -74,9 +84,21 @@ class AlertType(models.Model):
 
 # класс Тревога
 class Alert(models.Model):
-    type = models.ForeignKey(AlertType, verbose_name='Тип тревоги', db_index=True)
+    type = models.ForeignKey(AlertType, verbose_name='Тип тревоги',
+                             db_index=True)
     asset = models.ForeignKey(Asset, verbose_name='Актив', db_index=True)
-    time = models.DateTimeField(auto_now_add=True,  db_index=True, verbose_name='Время возникновения')
-    checked = models.BooleanField(default=False, db_index=True, verbose_name='Отработано')
-    checked_message = models.CharField(max_length=512, verbose_name='Пояснительное сообщение')
-    # TODO: добавить связь с событиями из ElasticSearch. Здесь как-то нужно хранить идентификаторы событий.
+    time = models.DateTimeField(db_index=True,
+                                verbose_name='Время возникновения')
+    checked = models.BooleanField(default=False, db_index=True,
+                                  verbose_name='Отработано')
+    checked_message = models.CharField(max_length=512, blank=True,
+                                       verbose_name='Пояснительное сообщение')
+    # TODO: добавить связь с событиями из ElasticSearch.
+    # Здесь как-то нужно хранить идентификаторы событий.
+
+    class Meta:
+        verbose_name = 'Тревога'
+        verbose_name_plural = 'Тревоги'
+
+    def __str__(self):
+        return "{} {} {}".format(self.time, self.type.name, self.asset.name)
