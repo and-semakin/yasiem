@@ -1,0 +1,44 @@
+{% extends 'asset/base.html' %}
+
+{% load static %}
+
+{% block title %}{% if category %} {{ os.name }} {% else %} По операционной системе {% endif %}{% endblock %}
+
+{% block content %}
+  <div id="sidebar" class="col-sm-3">
+    <h3>Операционные системы</h3>
+    <ul>
+      <li {% if not os %} class="selected" {% endif %}>
+        <a href="{% url 'asset:AssetList' %}">Все</a>
+      </li>
+      {% for os1 in oses %}
+        <li {% if os.id == os1.id %} class="selected" {% endif %}>
+          <a href="{{ os1.get_absolute_url }}">{{ os1.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div id="main" class="product_list col-sm-9">
+    <h1>{% if os %}{{ os.name }}{% else %}Тревоги {{ alert_type }}{% endif %}</h1>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Актив</th>
+            <th>Тип</th>
+            <th>Время</th>
+          </tr>
+        </thead>
+        <tbody>
+    {% for alert in alerts %}
+        <tr>
+          <td><a href="{{ alert.get_absolute_url }}">{{ alert.id }}</a></td>
+          <td><a href="{% url 'asset:AlertListForAsset' alert.asset.slug %}">{{ alert.asset.name }}</a></td>
+          <td><a href="{% url 'asset:AlertListForType' alert.type.id %}">{{ alert.type.name }}</a><br></td>
+          <td>{{ alert.time }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+  </div>
+{% endblock %}</code>
+</pre>
