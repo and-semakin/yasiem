@@ -34,14 +34,20 @@ def AssetDetail(request, id, slug):
 
 # Список тревог
 @login_required
-def AlertList(request, asset=None, alert_type=None):
+def AlertList(request, asset_slug=None, alert_type_id=None):
+    # default values
+    asset = None
+    alert_type = None
     alerts = Alert.objects.all().order_by('-time')
 
-    if asset is not None:
-        alerts = alerts.filter(asset=get_object_or_404(Asset, slug=asset))
+    if asset_slug is not None:
+        asset = get_object_or_404(Asset, slug=asset_slug)
+        alerts = alerts.filter(asset=asset)
 
-    if alert_type is not None:
-        alerts = alerts.filter(type=get_object_or_404(AlertType,
-                                                      pk=alert_type))
+    if alert_type_id is not None:
+        alert_type = get_object_or_404(AlertType, pk=alert_type_id)
+        alerts = alerts.filter(type=alert_type)
 
-    return render(request, 'asset/alert/list.html', {'alerts': alerts})
+    return render(request, 'asset/alert/list.html', {'alerts': alerts,
+                                                     'asset': asset,
+                                                     'alert_type': alert_type})

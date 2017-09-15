@@ -19,7 +19,7 @@
     </ul>
   </div>
   <div id="main" class="product_list col-sm-9">
-    <h1>{% if os %}{{ os.name }}{% else %}Тревоги {{ alert_type }}{% endif %}</h1>
+    <h1>{% if os %}{{ os.name }}{% else %}Тревоги{% endif %}</h1>
     <table class="table table-striped">
         <thead>
           <tr>
@@ -33,8 +33,16 @@
     {% for alert in alerts %}
         <tr>
           <td><a href="{{ alert.get_absolute_url }}">{{ alert.id }}</a></td>
-          <td><a href="{% url 'asset:AlertListForAsset' alert.asset.slug %}">{{ alert.asset.name }}</a></td>
-          <td><a href="{% url 'asset:AlertListForType' alert.type.id %}">{{ alert.type.name }}</a><br></td>
+          <td><a href="{% if alert_type %}
+            {% url 'asset:AlertListForAssetAndType' alert.asset.slug alert.type.id %}
+          {% else %}
+            {% url 'asset:AlertListForAsset' alert.asset.slug %}
+          {% endif %}">{{ alert.asset.name }}</a></td>
+          <td><a href="{% if asset %}
+            {% url 'asset:AlertListForAssetAndType' alert.asset.slug alert.type.id %}
+          {% else %}
+            {% url 'asset:AlertListForType' alert.type.id %}
+          {% endif %}">{{ alert.type.name }}</a><br></td>
           <td>{{ alert.time }}</td>
         </tr>
     {% endfor %}

@@ -14,11 +14,11 @@ urlpatterns = [
 
     # тревоги
     url(r'^alerts/$', views.AlertList, name='AlertList'),
-    url(r'^alerts/(?P<asset>[-\w]+)/$', views.AlertList,
+    url(r'^alerts/(?P<asset_slug>[-\w]+)/$', views.AlertList,
         name='AlertListForAsset'),
-    url(r'^alerts/type/(?P<alert_type>\d+)/$',
+    url(r'^alerts/type/(?P<alert_type_id>\d+)/$',
         views.AlertList, name='AlertListForType'),
-    url(r'^alerts/(?P<asset>[-\w]+)/type/(?P<alert_type>\d+)/$',
+    url(r'^alerts/(?P<asset_slug>[-\w]+)/type/(?P<alert_type_id>\d+)/$',
         views.AlertList, name='AlertListForAssetAndType'),
 ]
 
