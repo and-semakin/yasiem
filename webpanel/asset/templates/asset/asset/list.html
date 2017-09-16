@@ -13,7 +13,12 @@
       </li>
       {% for os1 in oses %}
         <li {% if os.id == os1.id %} class="selected" {% endif %}>
-          <a href="{{ os1.get_absolute_url }}">{{ os1.name }}</a>
+          <a href="{{ os1.get_absolute_url }}">
+            {{ os1.name }}
+            {% if os1.image %}
+            <img src="{{ os1.image.url }}">
+            {% endif %}
+          </a> ({{ os1.asset.count }})
         </li>
       {% endfor %}
     </ul>
@@ -36,10 +41,12 @@
           <td><a href="{% url 'asset:AlertListForAsset' asset.slug %}">{{ asset.ipv4 }}</a></td>
           <td><a href="{% url 'asset:AlertListForAsset' asset.slug %}">{{ asset.name }}</a><br></td>
           <td>
-            <a href="{% url 'asset:AlertListForAsset' asset.slug %}">{{ asset.os.name }}</a>
-            {% if asset.os.image %}
-            <img src="{{ asset.os.image.url }}">
-            {% endif %}
+            <a href="{% url 'asset:AlertListForAsset' asset.slug %}">
+              {{ asset.os.name }}
+              {% if asset.os.image %}
+              <img src="{{ asset.os.image.url }}">
+              {% endif %}
+            </a>
           </td>
         </tr>
     {% endfor %}
