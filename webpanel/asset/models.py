@@ -44,9 +44,9 @@ class Asset(models.Model):
                             verbose_name='IP адрес')
     slug = models.SlugField(max_length=200, db_index=True, unique=True,
                             verbose_name='Ссылка')
-    os = models.ForeignKey(OperatingSystem, related_name='OperatingSystem',
+    os = models.ForeignKey(OperatingSystem, related_name='asset',
                            verbose_name="Операционная система")
-    user = models.ForeignKey(AssetUser, related_name='User',
+    user = models.ForeignKey(AssetUser, related_name='asset',
                              verbose_name="Пользователь актива",
                              null=True, default=None)
 
@@ -85,8 +85,9 @@ class AlertType(models.Model):
 # класс Тревога
 class Alert(models.Model):
     type = models.ForeignKey(AlertType, verbose_name='Тип тревоги',
-                             db_index=True)
-    asset = models.ForeignKey(Asset, verbose_name='Актив', db_index=True)
+                             db_index=True, related_name='alert')
+    asset = models.ForeignKey(Asset, verbose_name='Актив', db_index=True,
+                              related_name='alert')
     time = models.DateTimeField(db_index=True,
                                 verbose_name='Время возникновения')
     checked = models.BooleanField(default=False, db_index=True,
