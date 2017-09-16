@@ -41,7 +41,7 @@
           <td><a href="{% url 'asset:AlertListForAsset' asset.slug %}">{{ asset.ipv4 }}</a></td>
           <td><a href="{% url 'asset:AlertListForAsset' asset.slug %}">{{ asset.name }}</a><br></td>
           <td>
-            <a href="{% url 'asset:AlertListForAsset' asset.slug %}">
+            <a href="{{ asset.os.get_absolute_url }}">
               {{ asset.os.name }}
               {% if asset.os.image %}
               <img src="{{ asset.os.image.url }}">
