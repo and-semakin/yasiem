@@ -66,7 +66,7 @@ class Asset(models.Model):
         return reverse('asset:AssetDetail', args=[self.slug, self.id])
 
 
-# класс Тип тревоги
+# класс Тип инцидента безопасности
 class AlertType(models.Model):
     ALERT_LEVELS = (
         (0, 'низкий'),
@@ -76,19 +76,19 @@ class AlertType(models.Model):
     name = models.CharField(max_length=200, db_index=True,
                             verbose_name='Название')
     level = models.SmallIntegerField(choices=ALERT_LEVELS, default=0,
-                                     verbose_name='Уровень тревоги')
+                                     verbose_name='Уровень важности')
 
     class Meta:
-        verbose_name = 'Тип тревоги'
-        verbose_name_plural = 'Типы тревог'
+        verbose_name = 'Тип инцидента'
+        verbose_name_plural = 'Типы инцидентов'
 
     def __str__(self):
         return self.name
 
 
-# класс Тревога
+# класс Инцидент безопасности
 class Alert(models.Model):
-    type = models.ForeignKey(AlertType, verbose_name='Тип тревоги',
+    type = models.ForeignKey(AlertType, verbose_name='Тип инцидента',
                              db_index=True, related_name='alert')
     asset = models.ForeignKey(Asset, verbose_name='Актив', db_index=True,
                               related_name='alert')
@@ -102,8 +102,8 @@ class Alert(models.Model):
     # Здесь как-то нужно хранить идентификаторы событий.
 
     class Meta:
-        verbose_name = 'Тревога'
-        verbose_name_plural = 'Тревоги'
+        verbose_name = 'Инцидент'
+        verbose_name_plural = 'Инциденты'
 
     def save(self, *args, **kwargs):
         super(Alert, self).save(*args, **kwargs)
