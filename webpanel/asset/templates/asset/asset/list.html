@@ -2,55 +2,97 @@
 
 {% load static %}
 
-{% block title %}{% if category %} {{ os.name }} {% else %} По операционной системе {% endif %}{% endblock %}
+{% block title %}Активы
+  {% if current_os %}
+    {% if current_user %}
+      – {{ current_user.name }}, {{ current_os.name }}
+    {% else %}
+      – {{ current_os.name }}
+    {% endif %}
+  {% else %}
+    {% if current_user %}
+      – {{ current_user.name }}
+    {% endif %}
+  {% endif %}
+{% endblock %}
 
 {% block content %}
   <div id="sidebar" class="col-sm-3">
+    <h3>Пользователи</h3>
+    <ul>
+      <li {% if not current_user %} class="selected" {% endif %}>
+        {% if current_os %}
+          <a href="{% url 'asset:AssetListByOs' current_os.id %}">Все</a>
+        {% else %}
+          <a href="{% url 'asset:AssetList' %}">Все</a>
+        {% endif %}
+      </li>
+      {% for user in users %}
+        <li {% if current_user.id == user.id %} class="selected" {% endif %}>
+          {% if current_os %}
+            <a href="{% url 'asset:AssetListByOsAndUser' current_os.id user.id %}">{{ user.name }}</a>
+          {% else %}
+            <a href="{{ user.get_absolute_url }}">{{ user.name }}</a>
+          {% endif %} ({{ user.asset.count }})
+        </li>
+      {% endfor %}
+    </ul>
     <h3>Операционные системы</h3>
     <ul>
-      <li {% if not os %} class="selected" {% endif %}>
-        <a href="{% url 'asset:AssetList' %}">Все</a>
+      <li {% if not current_os %} class="selected" {% endif %}>
+        {% if current_user %}
+          <a href="{% url 'asset:AssetListByUser' current_user.id %}">Все</a>
+        {% else %}
+          <a href="{% url 'asset:AssetList' %}">Все</a>
+        {% endif %}
       </li>
-      {% for os1 in oses %}
-        <li {% if os.id == os1.id %} class="selected" {% endif %}>
-          <a href="{{ os1.get_absolute_url }}">
-            {{ os1.name }}
-            {% if os1.image %}
-            <img src="{{ os1.image.url }}">
-            {% endif %}
-          </a> ({{ os1.asset.count }})
+      {% for os in oses %}
+        <li {% if current_os.id == os.id %} class="selected" {% endif %}>
+          {% if current_user %}
+            <a href="{% url 'asset:AssetListByOsAndUser' os.id current_user.id %}"> {{ os.name }} {% if os.image %} <img src="{{ os.image.url }}"> {% endif %} </a>
+          {% else %}
+            <a href="{{ os.get_absolute_url }}"> {{ os.name }} {% if os.image %} <img src="{{ os.image.url }}"> {% endif %} </a>
+          {% endif %} ({{ os.asset.count }})
         </li>
       {% endfor %}
     </ul>
   </div>
   <div id="main" class="product_list col-sm-9">
-    <h1>{% if os %}{{ os.name }}{% else %}Активы{% endif %}</h1>
-    <table class="table table-striped">
-        <thead>
+    <h1>Активы</h1>
+    {% if assets %}
+      <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>IP</th>
+              <th>Название</th>
+              <th>Пользователь</th>
+              <th>ОС</th>
+            </tr>
+          </thead>
+          <tbody>
+      {% for asset in assets %}
           <tr>
-            <th>ID</th>
-            <th>IP</th>
-            <th>Название</th>
-            <th>ОС</th>
+            <td><a href="{% url 'asset:AlertListForAsset' asset.slug %}">{{ asset.id }}</a></td>
+            <td><a href="{% url 'asset:AlertListForAsset' asset.slug %}">{{ asset.ipv4 }}</a></td>
+            <td><a href="{% url 'asset:AlertListForAsset' asset.slug %}">{{ asset.name }}</a><br></td>
+            <td><a href="{% url 'asset:AlertListForAsset' asset.slug %}">{{ asset.user.name }}</a><br></td>
+            <td>
+              <a href="{{ asset.os.get_absolute_url }}">
+                {{ asset.os.name }}
+                {% if asset.os.image %}
+                <img src="{{ asset.os.image.url }}">
+                {% endif %}
+              </a>
+            </td>
           </tr>
-        </thead>
-        <tbody>
-    {% for asset in asset_collection %}
-        <tr>
-          <td><a href="{% url 'asset:AlertListForAsset' asset.slug %}">{{ asset.id }}</a></td>
-          <td><a href="{% url 'asset:AlertListForAsset' asset.slug %}">{{ asset.ipv4 }}</a></td>
-          <td><a href="{% url 'asset:AlertListForAsset' asset.slug %}">{{ asset.name }}</a><br></td>
-          <td>
-            <a href="{{ asset.os.get_absolute_url }}">
-              {{ asset.os.name }}
-              {% if asset.os.image %}
-              <img src="{{ asset.os.image.url }}">
-              {% endif %}
-            </a>
-          </td>
-        </tr>
-    {% endfor %}
-    </table>
+      {% endfor %}
+      </table>
+    {% else %}
+      <div class="alert alert-warning">
+        Активы по заданному фильтру отсутствуют. Перейдите по ссылке, чтобы <a href="{% url 'asset:AssetList' %}" class="alert-link">сбросить фильтры</a>.
+      </div>
+    {% endif %}
   </div>
 {% endblock %}</code>
 </pre>

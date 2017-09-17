@@ -18,7 +18,7 @@ class OperatingSystem(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('asset:AssetListByCategory', args=[self.id])
+        return reverse('asset:AssetListByOs', args=[self.id])
 
 
 # класс Пользователь актива
@@ -34,6 +34,9 @@ class AssetUser(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse('asset:AssetListByUser', args=[self.id])
 
 
 # класс Актив

@@ -1,28 +1,33 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Asset, OperatingSystem, Alert, AlertType
+from .models import Asset, AssetUser, OperatingSystem, Alert, AlertType
 from django.contrib.auth.decorators import login_required
 
 
 # Страница с активами
 @login_required
-def AssetList(request, operation_system=None):
+def AssetList(request, os_id=None, user_id=None):
+    # default values
+    os = None
+    user = None
     oses = OperatingSystem.objects.all()
-    asset_collection = Asset.objects.all().order_by('id')
+    users = AssetUser.objects.all()
+    assets = Asset.objects.all().order_by('id')
 
-    if operation_system is not None:
-        os = get_object_or_404(OperatingSystem, id=int(operation_system))
-        asset_collection = asset_collection.filter(os=os)
+    if os_id is not None:
+        os = get_object_or_404(OperatingSystem, id=int(os_id))
+        assets = assets.filter(os=os)
 
-        return render(request, 'asset/asset/list.html', {
-            'os': os,
-            'oses': oses,
-            'asset_collection': asset_collection,
-        })
-    else:
-        return render(request, 'asset/asset/list.html', {
-            'oses': oses,
-            'asset_collection': asset_collection,
-        })
+    if user_id is not None:
+        user = get_object_or_404(AssetUser, id=int(user_id))
+        assets = assets.filter(user=user)
+
+    return render(request, 'asset/asset/list.html', {
+        'users': users,
+        'oses': oses,
+        'assets': assets,
+        'current_user': user,
+        'current_os': os,
+    })
 
 
 # Страница актива

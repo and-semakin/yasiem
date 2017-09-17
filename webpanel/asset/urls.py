@@ -7,8 +7,12 @@ urlpatterns = [
     # активы
     url(r'^$', views.AssetList, name='AssetList'),
     url(r'^assets/$', views.AssetList, name='AssetList'),
-    url(r'^assets/os/(?P<operation_system>\d+)/$',
-        views.AssetList, name='AssetListByCategory'),
+    url(r'^assets/os/(?P<os_id>\d+)/$',
+        views.AssetList, name='AssetListByOs'),
+    url(r'^assets/user/(?P<user_id>\d+)/$',
+        views.AssetList, name='AssetListByUser'),
+    url(r'^assets/os/(?P<os_id>\d+)/user/(?P<user_id>\d+)/$',
+        views.AssetList, name='AssetListByOsAndUser'),
     url(r'^assets/details/(?P<slug>[-\w]+)/(?P<id>\d+)/$',
         views.AssetDetail, name='AssetDetail'),
 
