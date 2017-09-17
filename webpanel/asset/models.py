@@ -1,5 +1,6 @@
 from django.db import models
 from django.core.urlresolvers import reverse
+from .notify_telegram import notify
 
 
 # класс Операционная система
@@ -104,5 +105,18 @@ class Alert(models.Model):
         verbose_name = 'Тревога'
         verbose_name_plural = 'Тревоги'
 
+    def save(self, *args, **kwargs):
+        super(Alert, self).save(*args, **kwargs)
+        notify(text="<b>{}</b> произошел инцидент безопасности <b>\"{}\"</b> "
+               "на активе <b>\"{}\"</b> (IP: {}, пользователь: <b>{}</b>). "
+               "Инциденту присвоен <b>{}</b> уровень критичности.\n"
+               "Детали: http://127.0.0.1:8000{}".
+               format(self.time.strftime("%d.%m.%Y %H:%M:%S"), self.type.name,
+                      self.asset.name, self.asset.ipv4, self.asset.user.name,
+                      self.type.get_level_display(), self.get_absolute_url()))
+
     def __str__(self):
         return "{} {} {}".format(self.time, self.type.name, self.asset.name)
+
+    def get_absolute_url(self):
+        return reverse('asset:AlertDetails', args=[self.id])

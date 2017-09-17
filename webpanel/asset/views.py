@@ -56,3 +56,9 @@ def AlertList(request, asset_slug=None, alert_type_id=None):
     return render(request, 'asset/alert/list.html', {'alerts': alerts,
                                                      'asset': asset,
                                                      'alert_type': alert_type})
+
+
+# Подробности инцидента
+@login_required
+def AlertDetails(request, alert_id):
+    pass
