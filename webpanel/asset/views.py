@@ -43,6 +43,8 @@ def AlertList(request, asset_slug=None, alert_type_id=None):
     # default values
     asset = None
     alert_type = None
+    assets = Asset.objects.all()
+    alert_types = AlertType.objects.all()
     alerts = Alert.objects.all().order_by('-time')
 
     if asset_slug is not None:
@@ -53,9 +55,12 @@ def AlertList(request, asset_slug=None, alert_type_id=None):
         alert_type = get_object_or_404(AlertType, pk=alert_type_id)
         alerts = alerts.filter(type=alert_type)
 
-    return render(request, 'asset/alert/list.html', {'alerts': alerts,
-                                                     'asset': asset,
-                                                     'alert_type': alert_type})
+    return render(request, 'asset/alert/list.html',
+                  {'alerts': alerts,
+                   'assets': assets,
+                   'alert_types': alert_types,
+                   'current_asset': asset,
+                   'current_alert_type': alert_type})
 
 
 # Подробности инцидента
