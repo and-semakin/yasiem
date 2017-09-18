@@ -2,51 +2,96 @@
 
 {% load static %}
 
-{% block title %}{% if category %} {{ os.name }} {% else %} По операционной системе {% endif %}{% endblock %}
+{% block title %}Инциденты
+  {% if current_asset %}
+    {% if current_alert_type %}
+      – {{ current_alert_type.name }}, {{ current_asset.name }}
+    {% else %}
+      – {{ current_asset.name }}
+    {% endif %}
+  {% else %}
+    {% if current_alert_type %}
+      – {{ current_alert_type.name }}
+    {% endif %}
+  {% endif %}
+{% endblock %}
 
 {% block content %}
   <div id="sidebar" class="col-sm-3">
-    <h3>Операционные системы</h3>
+    <h3>Активы</h3>
     <ul>
-      <li {% if not os %} class="selected" {% endif %}>
-        <a href="{% url 'asset:AssetList' %}">Все</a>
+      <li {% if not current_asset %} class="selected" {% endif %}>
+        {% if current_alert_type %}
+          <a href="{% url 'asset:AlertListForType' current_alert_type.id %}">Все</a>
+        {% else %}
+          <a href="{% url 'asset:AlertList' %}">Все</a>
+        {% endif %}
       </li>
-      {% for os1 in oses %}
-        <li {% if os.id == os1.id %} class="selected" {% endif %}>
-          <a href="{{ os1.get_absolute_url }}">{{ os1.name }}</a>
+      {% for asset in assets %}
+        <li {% if current_asset.id == asset.id %} class="selected" {% endif %}>
+          {% if current_alert_type %}
+            <a href="{% url 'asset:AlertListForAssetAndType' asset.slug current_alert_type.id %}">{{ asset.name }}</a>
+          {% else %}
+            <a href="{% url 'asset:AlertListForAsset' asset.slug %}">{{ asset.name }}</a>
+          {% endif %} ({{ asset.alert.count }})
+        </li>
+      {% endfor %}
+    </ul>
+    <h3>Типы инцидентов</h3>
+    <ul>
+      <li {% if not current_alert_type %} class="selected" {% endif %}>
+        {% if current_asset %}
+          <a href="{% url 'asset:AlertListForAsset' current_asset.slug %}">Все</a>
+        {% else %}
+          <a href="{% url 'asset:AlertList' %}">Все</a>
+        {% endif %}
+      </li>
+      {% for type in alert_types %}
+        <li {% if current_alert_type.id == type.id %} class="selected" {% endif %}>
+          {% if current_asset %}
+            <a href="{% url 'asset:AlertListForAssetAndType' current_asset.slug type.id %}">{{ type.name }}</a>
+          {% else %}
+            <a href="{% url 'asset:AlertListForType' type.id %}">{{ type.name }}</a>
+          {% endif %} ({{ type.alert.count }})
         </li>
       {% endfor %}
     </ul>
   </div>
   <div id="main" class="product_list col-sm-9">
-    <h1>{% if os %}{{ os.name }}{% else %}Тревоги{% endif %}</h1>
-    <table class="table table-striped">
-        <thead>
+    <h1>Инциденты</h1>
+    {% if alerts %}
+      <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Актив</th>
+              <th>Тип</th>
+              <th>Время</th>
+            </tr>
+          </thead>
+          <tbody>
+      {% for alert in alerts %}
           <tr>
-            <th>ID</th>
-            <th>Актив</th>
-            <th>Тип</th>
-            <th>Время</th>
+            <td><a href="{{ alert.get_absolute_url }}">{{ alert.id }}</a></td>
+            <td><a href="{% if alert_type %}
+              {% url 'asset:AlertListForAssetAndType' alert.asset.slug alert.type.id %}
+            {% else %}
+              {% url 'asset:AlertListForAsset' alert.asset.slug %}
+            {% endif %}">{{ alert.asset.name }}</a></td>
+            <td><a href="{% if asset %}
+              {% url 'asset:AlertListForAssetAndType' alert.asset.slug alert.type.id %}
+            {% else %}
+              {% url 'asset:AlertListForType' alert.type.id %}
+            {% endif %}">{{ alert.type.name }}</a><br></td>
+            <td>{{ alert.time }}</td>
           </tr>
-        </thead>
-        <tbody>
-    {% for alert in alerts %}
-        <tr>
-          <td><a href="{{ alert.get_absolute_url }}">{{ alert.id }}</a></td>
-          <td><a href="{% if alert_type %}
-            {% url 'asset:AlertListForAssetAndType' alert.asset.slug alert.type.id %}
-          {% else %}
-            {% url 'asset:AlertListForAsset' alert.asset.slug %}
-          {% endif %}">{{ alert.asset.name }}</a></td>
-          <td><a href="{% if asset %}
-            {% url 'asset:AlertListForAssetAndType' alert.asset.slug alert.type.id %}
-          {% else %}
-            {% url 'asset:AlertListForType' alert.type.id %}
-          {% endif %}">{{ alert.type.name }}</a><br></td>
-          <td>{{ alert.time }}</td>
-        </tr>
-    {% endfor %}
-    </table>
+      {% endfor %}
+      </table>
+    {% else %}
+      <div class="alert alert-warning">
+        Инциденты по заданному фильтру отсутствуют. Перейдите по ссылке, чтобы <a href="{% url 'asset:AlertList' %}" class="alert-link">сбросить фильтры</a>.
+      </div>
+    {% endif %}
   </div>
 {% endblock %}</code>
 </pre>
