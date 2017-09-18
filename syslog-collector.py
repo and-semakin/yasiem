@@ -20,6 +20,8 @@ from elasticsearch import Elasticsearch
 from datetime import datetime
 from normalizer import normalize
 
+counter = 0
+
 es = Elasticsearch()
 
 logging.basicConfig(level=logging.INFO, format='%(message)s', datefmt='', filename=LOG_FILE, filemode='a')
@@ -27,6 +29,7 @@ logging.basicConfig(level=logging.INFO, format='%(message)s', datefmt='', filena
 class SyslogUDPHandler(socketserver.BaseRequestHandler):
 
     def handle(self):
+        global counter
         data = bytes.decode(self.request[0].strip())
         socket = self.request[1]
         print( "%s : " % self.client_address[0], str(data))
@@ -35,6 +38,8 @@ class SyslogUDPHandler(socketserver.BaseRequestHandler):
         result = es.index(index=today, doc_type='event', body=body)
         if not result['created']:
             logging.info(str(data))
+        counter += 1
+        print("Got", counter, "messages")
 
 if __name__ == "__main__":
     try:
