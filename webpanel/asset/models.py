@@ -92,7 +92,7 @@ class Alert(models.Model):
                              db_index=True, related_name='alert')
     asset = models.ForeignKey(Asset, verbose_name='Актив', db_index=True,
                               related_name='alert')
-    time = models.DateTimeField(db_index=True,
+    time = models.DateTimeField(db_index=True, auto_now=True,
                                 verbose_name='Время возникновения')
     checked = models.BooleanField(default=False, db_index=True,
                                   verbose_name='Отработано')
