@@ -1,6 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Asset, AssetUser, OperatingSystem, Alert, AlertType
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.conf import settings
 
 
 # Страница с активами
@@ -54,6 +56,15 @@ def AlertList(request, asset_slug=None, alert_type_id=None):
     if alert_type_id is not None:
         alert_type = get_object_or_404(AlertType, pk=alert_type_id)
         alerts = alerts.filter(type=alert_type)
+
+    page = request.GET.get('page', 1)
+    paginator = Paginator(alerts, settings.ITEMS_PER_PAGE)
+    try:
+        alerts = paginator.page(page)
+    except PageNotAnInteger:
+        alerts = paginator.page(1)
+    except EmptyPage:
+        alerts = paginator.page(paginator.num_pages)
 
     return render(request, 'asset/alert/list.html',
                   {'alerts': alerts,

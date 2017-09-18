@@ -87,6 +87,29 @@
           </tr>
       {% endfor %}
       </table>
+      {% if alerts.has_other_pages %}
+        <div class="text-center">
+          <ul class="pagination">
+            {% if alerts.has_previous %}
+              <li><a href="?page={{ alerts.previous_page_number }}">&laquo;</a></li>
+            {% else %}
+              <li class="disabled"><span>&laquo;</span></li>
+            {% endif %}
+            {% for i in alerts.paginator.page_range %}
+              {% if alerts.number == i %}
+                <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+              {% else %}
+                <li><a href="?page={{ i }}">{{ i }}</a></li>
+              {% endif %}
+            {% endfor %}
+            {% if alerts.has_next %}
+              <li><a href="?page={{ alerts.next_page_number }}">&raquo;</a></li>
+            {% else %}
+              <li class="disabled"><span>&raquo;</span></li>
+            {% endif %}
+          </ul>
+        </div>
+      {% endif %}
     {% else %}
       <div class="alert alert-warning">
         Инциденты по заданному фильтру отсутствуют. Перейдите по ссылке, чтобы <a href="{% url 'asset:AlertList' %}" class="alert-link">сбросить фильтры</a>.
