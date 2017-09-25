@@ -46,9 +46,9 @@ parser.add_argument("--repeats",
 
 parser.add_argument("--sleep",
                     "-s",
-                    type=float,
+                    type=int,
                     default=default_sleep,
-                    help="Sleep between repeats (ms)")
+                    help="Sleep between repeats")
 
 parser.add_argument("--workers",
                     "-w",
