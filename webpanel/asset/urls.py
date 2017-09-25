@@ -25,7 +25,10 @@ urlpatterns = [
     url(r'^alerts/asset/(?P<asset_slug>[-\w]+)/type/(?P<alert_type_id>\d+)/$',
         views.AlertList, name='AlertListForAssetAndType'),
     url(r'^alerts/details/(?P<alert_id>\d+)$', views.AlertDetails,
-        name='AlertDetails')
+        name='AlertDetails'),
+
+    # события
+    url(r'^events/$', views.EventList, name='EventList'),
 ]
 
 if settings.DEBUG:

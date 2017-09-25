@@ -1,0 +1,39 @@
+{% extends 'asset/base.html' %}
+
+{% load static %}
+
+{% block title %}События{% endblock %}
+
+{% block content %}
+  <div id="main" class="product_list col-sm-12">
+    <h1>События</h1>
+    {% if events %}
+      <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Источник</th>
+              <th>Тип</th>
+              <th>Время</th>
+              <th>Данные</th>
+            </tr>
+          </thead>
+          <tbody>
+      {% for event in events %}
+          <tr>
+            <td>{{ event.id }}</td>
+            <td>{{ event.source }}</td>
+            <td>{{ event.type }}</td>
+            <td>{{ event.dt }}</td>
+            <td>{{ alert.data }}</td>
+          </tr>
+      {% endfor %}
+      </table>
+    {% else %}
+      <div class="alert alert-warning">
+        События отсутствуют.
+      </div>
+    {% endif %}
+  </div>
+{% endblock %}</code>
+</pre>

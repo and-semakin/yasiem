@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Asset, AssetUser, OperatingSystem, Alert, AlertType
+from .documents import EventDocument
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.conf import settings
@@ -77,4 +78,12 @@ def AlertList(request, asset_slug=None, alert_type_id=None):
 # Подробности инцидента
 @login_required
 def AlertDetails(request, alert_id):
-    pass
+    pass  # TODO: implement this view
+
+
+# Список событий
+def EventList(request):
+    events = EventDocument.search()  # .query("match_all", "{}")
+
+    return render(request, 'asset/event/list.html',
+                  {'events': events})

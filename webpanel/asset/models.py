@@ -120,3 +120,12 @@ class Alert(models.Model):
 
     def get_absolute_url(self):
         return reverse('asset:AlertDetails', args=[self.id])
+
+
+# класс Событие
+class Event(models.Model):
+    source = models.CharField(max_length=256, null=True)
+    dt = models.CharField(max_length=256, null=True)
+    user = models.CharField(max_length=256, null=True)
+    type = models.CharField(max_length=256, null=True)
+    data = models.CharField(max_length=512, null=True)

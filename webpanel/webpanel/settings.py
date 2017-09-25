@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'asset',
     'user',
+    'django_elasticsearch_dsl',
 ]
 
 MIDDLEWARE = [
@@ -134,3 +135,9 @@ LOGOUT_REDIRECT_URL = '/'
 AUTH_PROFILE_MODULE = 'user.UserProfile'
 
 ITEMS_PER_PAGE = 15
+
+ELASTICSEARCH_DSL = {
+    'default': {
+        'hosts': 'localhost:9200'
+    },
+}
