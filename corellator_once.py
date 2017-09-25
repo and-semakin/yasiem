@@ -15,31 +15,32 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "webpanel.settings")
 django.setup()
 
 from asset.models import (Asset, AssetUser, Alert,
-                                   AlertType, OperatingSystem)
-                                   
-                                   
+                          AlertType, OperatingSystem)
+
+
 def check_failed_login():
-    es = Elasticsearch() # это внутри функции или межд уними? я не помню... где оно было? здесь и было. довай тут будет
+    es = Elasticsearch()
     while True:
-        
-        if len(json.loads(es.search(index='2017-09-22', body={"query": {"match": {'act':'LOGIN FAILED'}}}))) >= 3:
+        reply = es.search(index='2017-09-17', body={"query": {"match_phrase": {"act": "LOGIN FAILED"}}})
+        # print(reply)
+        if len(reply) >= 3:  # TODO: fix this condition
             print("LOGIN FAILED EXCEPTION")
         else:
             print("NO EXC, LISTENING . . .")
-    sleep(10)
+        sleep(10)
 
 
 def corellate():
-    args = parser.parse_args()
     p1 = Process(target=check_failed_login)
     p1.start()
 
 
 def create_alert():
-    type = AlertType.objects.all()[0] # выбираем первый попавшийся тип инцидента
-    asset = Asset.objects.all()[0] # выбираем первый попавшийся актив
-    alert = Alert.objects.create(type=type, asset=asset) # создаем инцидент из этого всего.
+    type = AlertType.objects.all()[0]  # выбираем первый попавшийся тип инцидента
+    asset = Asset.objects.all()[0]  # выбираем первый попавшийся актив
+    alert = Alert.objects.create(type=type, asset=asset)  # создаем инцидент из этого всего.
     print(alert)
+
 
 if __name__ == '__main__':
     corellate()
