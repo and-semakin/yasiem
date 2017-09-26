@@ -82,17 +82,25 @@ def AlertDetails(request, alert_id):
 
 
 # Список событий
-def EventList(request):
-    events = list(EventDocument.search().scan())  # .query("match_all", "{}")
+def EventList(request, all=False):
+    # без пагинации
+    if all:
+        events = EventDocument.search().scan()
+    # с пагинацией; возможно, будет медленно работать, потому что
+    # загружаются все события в память.
+    # осторожно! говнокод!
+    # зато работает.
+    else:
+        events = list(EventDocument.search().scan())
 
-    page = request.GET.get('page', 1)
-    paginator = Paginator(events, settings.ITEMS_PER_PAGE)
-    try:
-        events = paginator.page(page)
-    except PageNotAnInteger:
-        events = paginator.page(1)
-    except EmptyPage:
-        events = paginator.page(paginator.num_pages)
+        page = request.GET.get('page', 1)
+        paginator = Paginator(events, settings.ITEMS_PER_PAGE)
+        try:
+            events = paginator.page(page)
+        except PageNotAnInteger:
+            events = paginator.page(1)
+        except EmptyPage:
+            events = paginator.page(paginator.num_pages)
 
     return render(request, 'asset/event/list.html',
-                  {'events': events})
+                  {'events': events, 'all': all})
