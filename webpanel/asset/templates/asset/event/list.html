@@ -5,7 +5,18 @@
 {% block title %}События{% endblock %}
 
 {% block content %}
-  <div id="main" class="product_list col-sm-12">
+  <div id="sidebar" class="col-sm-3">
+    <h3>Отображение</h3>
+    <ul>
+      <li {% if all %} class="selected" {% endif %}>
+        <a href="{% url 'asset:EventListAll' %}">Все</a>
+      </li>
+      <li {% if not all %} class="selected" {% endif %}>
+        <a href="{% url 'asset:EventList' %}">Постранично</a>
+      </li>
+    </ul>
+  </div>
+  <div id="main" class="product_list col-sm-9">
     <h1>События</h1>
     {% if events %}
       <table class="table table-striped">

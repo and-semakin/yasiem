@@ -29,6 +29,7 @@ urlpatterns = [
 
     # события
     url(r'^events/$', views.EventList, name='EventList'),
+    url(r'^events/all/$', views.EventList, { 'all': True, }, name='EventListAll'),
 ]
 
 if settings.DEBUG:
