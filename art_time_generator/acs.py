@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python
+#!/usr/bin/env python
 
 # From: https://gist.github.com/nfarrar/884c72ec107a00606a86 
 
@@ -69,13 +69,13 @@ def flood_acs(args):
         time = datetime.now().strftime('%Y-%m-%d-%H-%M-%S-%f')
         ipv4 = random_asset.ipv4
         arm = random_asset.name
-        user = random_asset.user
         os = random_asset.os
+        user = random_asset.user
         direction = random.choice(directions)
-        msg = "%AccessControl%;{};{};{};{};{};{}".format(time, ipv4, arm, os, direction, user)
+        msg = "%AccessControl%;{};{};{};{};{};{}".format(time, ipv4, arm, os, user, direction)
         syslogger.log(string_to_level('INFO'), msg)
         sleep(args.sleep)
-        print("added", direction)
+        print("added", msg)
 
 if __name__ == "__main__":
     args = parser.parse_args()

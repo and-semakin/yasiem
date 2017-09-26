@@ -1,4 +1,4 @@
-﻿from datetime import datetime
+from datetime import datetime
 
 def normalize(line):
     #  undo priority
@@ -32,15 +32,15 @@ def normalize(line):
     elif(line.startswith('%AccessControl%')):
         line = line[len('%AccessControl% '):]
         splitted = line.split(";")
-        print("AZAZLO")
-        print(splitted)
-        print("AZAZLO")
+        #print("AZAZLO")
+        #print(splitted)
+        #print("AZAZLO")
         dt = datetime.strptime(splitted[0], '%Y-%m-%d-%H-%M-%S-%f')
         ipv4 = splitted[1]
         arm = splitted[2]
         os = splitted[3]
-        action = splitted[4].rstrip("\x00\n")
         user = splitted[4]
+        action = splitted[5].rstrip("\x00\n")
         return {'priority': prio, 'source': 'acs', 'dt': dt, 'ipv4': ipv4, 'arm': arm, 'user': user, 'os': os, 'act': action}
     else:
         return {'act': 'Parse error.'}

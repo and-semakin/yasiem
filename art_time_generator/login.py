@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python
+#!/usr/bin/env python
 
 # From: https://gist.github.com/nfarrar/884c72ec107a00606a86 
 
