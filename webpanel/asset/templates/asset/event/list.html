@@ -22,7 +22,6 @@
       <table class="table table-striped">
           <thead>
             <tr>
-              <th>ID</th>
               <th>Источник</th>
               <th>Тип</th>
               <th>Время</th>
@@ -32,7 +31,6 @@
           <tbody>
       {% for event in events %}
           <tr>
-            <td>{{ event.id }}</td>
             <td>{{ event.source }}</td>
             <td>{{ event.type }}</td>
             <td>{{ event.dt }}</td>
