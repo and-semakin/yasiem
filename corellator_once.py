@@ -20,19 +20,30 @@ from asset.models import (Asset, AssetUser, Alert,
 
 def check_failed_login():
     es = Elasticsearch()
-    while True:
-        reply = es.search(index='2017-09-17', body={"query": {"match_phrase": {"act": "LOGIN FAILED"}}})
-        # print(reply)
-        if len(reply) >= 3:  # TODO: fix this condition
+    reply = es.search(index='2017-09-25', body={"query": {"match_phrase": {"act": "LOGIN FAILED"}}})
+    print(reply['hits']['total'])
+    if reply['hits']['total'] >= 3:  # TODO: fix this condition
+        print("LOGIN FAILED EXCEPTION")
+    else:
+        print("NO EXC, LISTENING . . .")
+    """while True:
+        reply = es.search(index='2017-09-25', body={"query": {"match_phrase": {"act": "LOGIN FAILED"}}})
+        print(reply['hits']['total'])
+        if reply['hits']['total'] >= 3:  # TODO: fix this condition
             print("LOGIN FAILED EXCEPTION")
         else:
             print("NO EXC, LISTENING . . .")
-        sleep(10)
+        sleep(10)"""
 
 
-def corellate():
-    p1 = Process(target=check_failed_login)
-    p1.start()
+
+
+def corellate_in_out(body):
+    es = Elasticsearch()
+    reply = es.search(index="events", doctype="event_document", body={body["hits"]["_source"]["user"]})
+    
+    # p1 = Process(target=check_failed_login)
+    # p1.start()
 
 
 def create_alert():
@@ -43,5 +54,6 @@ def create_alert():
 
 
 if __name__ == '__main__':
-    corellate()
+    # corellate()
     # create_alert()
+    print("lol")

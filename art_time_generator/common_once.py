@@ -12,7 +12,7 @@ from datetime import datetime
 default_address = "localhost"
 default_port = 514
 default_level = "INFO"
-default_repeats = 50
+default_repeats = 10
 default_sleep = 2
 
 parser = argparse.ArgumentParser(__file__,

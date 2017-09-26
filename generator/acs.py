@@ -9,6 +9,37 @@ import random
 from time import sleep
 from datetime import datetime
 from common import *
+import random
+
+
+
+# import Django; copy from here
+import sys
+import os
+import django
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", "webpanel"))
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "webpanel.settings")
+django.setup()
+
+from asset.models import (Asset, AssetUser, Alert,
+                                   AlertType, OperatingSystem)
+# import Django; copy to here
+
+
+# get all assets and save them to list assets
+assets = Asset.objects.all()
+# now you can get all the field of object Asset
+# name, ipv4, slug, os, user
+# see webpanel/asset/models.py
+for asset in assets:
+    print(asset.name)
+for asset in assets:
+    print(asset.ipv4)
+# get random asset
+random_asset = random.choice(assets)
+print("Random asset:", random_asset.name, random_asset.ipv4, random_asset.os.name)
+exit()
+
 
 def flood_acs(args):
     DIRECTIONS = ['IN', 'OUT']

@@ -19,7 +19,8 @@ import logging.handlers
 import socketserver
 from elasticsearch import Elasticsearch
 from datetime import datetime
-from normalizer import normalize
+#from normalizer import normalize
+from normalizer_once import normalize
 from corellator_once import *
 
 counter = 0
@@ -36,17 +37,19 @@ class SyslogUDPHandler(socketserver.BaseRequestHandler):
         socket = self.request[1]
         print( "%s : " % self.client_address[0], str(data))
         body = normalize(str(data))
-        today = body['dt'].strftime('%Y-%m-%d')
-        result = es.index(index=today, doc_type='event', body=body)
-                
+        result = es.index(index='events', doc_type='event_document', body=body)
+        print("%should be indexed%")
+        print("result")
+        # check_failed_login()
+        # corellate_in_out(body)
+        
         if not result['created']:
             logging.info(str(data))
             
             # query to corellator
-            check_failed_login()
-            
-        counter += 1
-        print("Got", counter, "messages")
+        else:
+            counter += 1
+            print("Got", counter, "messages")
         
         
 
