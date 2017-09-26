@@ -68,10 +68,11 @@ def flood_acs(args):
         
         time = datetime.now().strftime('%Y-%m-%d-%H-%M-%S-%f')
         ipv4 = random_asset.ipv4
-        user = random_asset.name
+        arm = random_asset.name
+        user = random_asset.user
         os = random_asset.os
         direction = random.choice(directions)
-        msg = "%AccessControl%♥{}♥{}♥{}♥{}".format(time, ipv4, user, os, direction)
+        msg = "%AccessControl%;{};{};{};{};{};{}".format(time, ipv4, arm, os, direction, user)
         syslogger.log(string_to_level('INFO'), msg)
         sleep(args.sleep)
         print("added", direction)

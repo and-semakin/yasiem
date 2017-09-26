@@ -1,4 +1,4 @@
-import argparse
+Ôªøimport argparse
 import random
 import logging
 import logging.handlers
@@ -25,7 +25,7 @@ def search_only_in():
     body={
         "query":
             {"match":
-                {"user": "œ  ÿÂÔ‡‰‡"}
+                {"user": "–ü–ö –®–µ–ø–∞—Ä–¥–∞"}
             }
     })
     print(reply)"""
@@ -36,9 +36,9 @@ def drop_db():
     print("es db was dropped %)")
 
 if __name__ == "__main__":
-    #search_only_in()
-    #search_only_user()
-    drop_db()
+    # search_only_in()
+    # search_only_user()
+    # drop_db()
     exit()
     
     

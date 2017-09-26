@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 
 ## Tiny Syslog Server in Python.
 ##
@@ -34,6 +34,9 @@ class SyslogUDPHandler(socketserver.BaseRequestHandler):
     def handle(self):
         global counter
         data = bytes.decode(self.request[0].strip())
+        print("AZAZLO")
+        print(self.request[0].strip())
+        print("AZAZLO")
         socket = self.request[1]
         print( "%s : " % self.client_address[0], str(data))
         body = normalize(str(data))

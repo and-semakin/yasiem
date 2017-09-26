@@ -14,7 +14,7 @@ def normalize(line):
     if(line.startswith('%Antivirus%')):
         
         line = line[len('%Antivirus% '):]
-        splitted = line.split("♥", maxsplit=3)
+        splitted = line.split(";", maxsplit=3)
         dt = datetime.strptime(splitted[0], '%Y-%m-%d-%H-%M-%S-%f')
         arm = splitted[1]
         document = splitted[2]
@@ -23,7 +23,7 @@ def normalize(line):
         
     elif(line.startswith('%OS-Login%')):
         line = line[len('%OS-Login% '):]
-        splitted = line.split("♥", maxsplit=2)
+        splitted = line.split(";", maxsplit=2)
         dt = datetime.strptime(splitted[0], '%Y-%m-%d-%H-%M-%S-%f')
         worker = splitted[1]
         action = splitted[2].rstrip("\x00\n")
@@ -31,12 +31,17 @@ def normalize(line):
         
     elif(line.startswith('%AccessControl%')):
         line = line[len('%AccessControl% '):]
-        splitted = line.split("♥", maxsplit=6)
+        splitted = line.split(";")
+        print("AZAZLO")
+        print(splitted)
+        print("AZAZLO")
         dt = datetime.strptime(splitted[0], '%Y-%m-%d-%H-%M-%S-%f')
         ipv4 = splitted[1]
-        action = splitted[2].rstrip("\x00\n")
-        ipv4 = 
-        return {'priority': prio, 'source': 'acs', 'dt': dt, 'ipv4': ipv4, 'user': user, 'os': os, 'act': action}
+        arm = splitted[2]
+        os = splitted[3]
+        action = splitted[4].rstrip("\x00\n")
+        user = splitted[4]
+        return {'priority': prio, 'source': 'acs', 'dt': dt, 'ipv4': ipv4, 'arm': arm, 'user': user, 'os': os, 'act': action}
     else:
         return {'act': 'Parse error.'}
 

@@ -1,4 +1,4 @@
-from django.db import models
+﻿from django.db import models
 from django.core.urlresolvers import reverse
 from .notify_telegram import notify
 
