@@ -1,6 +1,8 @@
 ﻿from django.db import models
 from django.core.urlresolvers import reverse
 from .notify_telegram import notify
+from pytz import timezone
+from django.conf import settings
 
 
 # класс Операционная система
@@ -111,7 +113,7 @@ class Alert(models.Model):
                "на активе <b>\"{}\"</b> (IP: {}, пользователь: <b>{}</b>). "
                "Инциденту присвоен <b>{}</b> уровень критичности.\n"
                "Детали: http://127.0.0.1:8000{}".
-               format(self.time.strftime("%d.%m.%Y %H:%M:%S"), self.type.name,
+               format(self.time.astimezone(timezone(settings.TIME_ZONE)).strftime("%d.%m.%Y %H:%M:%S"), self.type.name,
                       self.asset.name, self.asset.ipv4, self.asset.user.name,
                       self.type.get_level_display(), self.get_absolute_url()))
 
