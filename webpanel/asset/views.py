@@ -83,7 +83,7 @@ def AlertDetails(request, alert_id):
 
 # Список событий
 def EventList(request):
-    events = EventDocument.search()  # .query("match_all", "{}")
+    events = EventDocument.search().scan()  # .query("match_all", "{}")
 
     return render(request, 'asset/event/list.html',
                   {'events': events})
